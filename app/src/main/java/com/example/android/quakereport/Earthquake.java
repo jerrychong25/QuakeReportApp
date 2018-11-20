@@ -8,14 +8,14 @@ public class Earthquake {
     // Location of the earthquake
     private String mLocation;
 
-    // Date of the earthquake
-    private String mDate;
+    // Time of the earthquake
+    private long mTimeInMilliseconds;
 
     // Construct a new Earthquake object
-    public Earthquake(String magnitude, String location, String date) {
+    public Earthquake(String magnitude, String location, long timeInMilliseconds) {
         mMagnitude = magnitude;
         mLocation = location;
-        mDate = date;
+        mTimeInMilliseconds = timeInMilliseconds;
     }
 
     // Returns the magnitude of the earthquake
@@ -24,6 +24,8 @@ public class Earthquake {
     // Returns the location of the earthquake
     public String getLocation() { return mLocation; }
 
-    // Returns the date of the earthquake
-    public String getDate() { return mDate; }
+    // Returns the time of the earthquake
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
+    }
 }
